@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - develop
+      - feature/olive-actions
   workflow_dispatch:
     inputs:
       analyze-only:
