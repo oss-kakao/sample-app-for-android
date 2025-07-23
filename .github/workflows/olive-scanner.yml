@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Olive CLI Scanner
-        uses: oss-kakao/olive-actions@main
+        uses: oss-kakao/olive-actions@feature/code-structure-improvement 
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
