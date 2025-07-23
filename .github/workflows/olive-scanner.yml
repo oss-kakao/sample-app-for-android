@@ -21,7 +21,7 @@ permissions:
   contents: read
   issues: write
   pull-requests: write
-  
+
 jobs:
   olive-scan:
     name: Olive CLI Scan
@@ -36,3 +36,4 @@ jobs:
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          user-config-path: "./user-config.yaml"

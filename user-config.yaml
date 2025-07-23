@@ -1,0 +1,6 @@
+isOpenSource: false
+excludePaths: []
+analysisType: "BUILDER"
+onlyDirect: false
+gradleBuildVariant: ""
+excludeGradle: []
