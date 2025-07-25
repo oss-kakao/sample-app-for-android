@@ -37,3 +37,4 @@ jobs:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           user-config-path: "./user-config.yaml"
+          debug: "true"
