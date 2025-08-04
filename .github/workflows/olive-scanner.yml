@@ -1,4 +1,4 @@
-name: Olive CLI Scanner
+name: OLIVE Action
 
 on:
   pull_request:
