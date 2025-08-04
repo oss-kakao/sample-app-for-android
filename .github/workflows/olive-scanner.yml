@@ -24,7 +24,7 @@ permissions:
   
 jobs:
   olive-scan:
-    name: Olive CLI Scan
+    name: OLIVE Action
     runs-on: ubuntu-latest
 
     steps:
