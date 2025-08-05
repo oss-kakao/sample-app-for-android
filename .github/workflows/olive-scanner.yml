@@ -29,10 +29,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
       - name: Run Olive CLI Scanner
-        uses: oss-kakao/olive-actions@v1
+        uses: oss-kakao/olive-action@main
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
