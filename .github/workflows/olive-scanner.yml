@@ -1,4 +1,4 @@
-name: Olive CLI Scanner
+name: OLIVE Action
 
 on:
   pull_request:
@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Olive CLI Scanner
-        uses: oss-kakao/olive-action@main
+        uses: kakao/olive-action@v1
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
