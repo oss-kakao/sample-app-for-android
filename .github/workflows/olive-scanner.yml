@@ -1,11 +1,10 @@
-name: Olive CLI Scanner
+name: OLIVE Actions
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
       - main
-      - develop
       - feature/olive-actions
   workflow_dispatch:
     inputs:
@@ -18,9 +17,14 @@ on:
           - "true"
           - "false"
 
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  
 jobs:
-  olive-scan:
-    name: Olive CLI Scan
+  olive-action:
+    name: OLIVE Action
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Olive CLI Scanner
-        uses: kakao/olive-actions@feature/OLIVEX-3169
+        uses: kakao/olive-action@v1
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
